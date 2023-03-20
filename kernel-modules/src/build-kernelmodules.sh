@@ -53,10 +53,10 @@ do
    (IFS=','
    for ver in $versions; do
 	# Skip building modules if already built.
-	if [ -d "../kernel-modules/${prefix}${ver}" ]; then
+	if [ -d "../../releases/modules/${prefix}${ver}" ]; then
   		echo "Skipping already built kernel modules for version ${prefix}${ver}."
 		continue
-	elif [[ -d "../kernel-modules/${arrIN[0]}" && ${arrIN[0]} == "4.4.198" ]]; then
+	elif [[ -d "../../releases/modules/${arrIN[0]}" && ${arrIN[0]} == "4.4.198" ]]; then
 		echo "Skipping already built kernel modules for version ${prefix}${ver} (${arrIN[0]})."
 		continue
 	fi
@@ -78,14 +78,16 @@ do
 	   
 	#Copy complete kernel modules
 	if [ -d "./output/target/lib/modules/${prefix}${ver}" ]; then
-		cp -r ./output/target/lib/modules/${prefix}${ver}  ../kernel-modules/${prefix}${ver}
+		cp -r ./output/target/lib/modules/${prefix}${ver}  ../../releases/modules/${prefix}${ver}
 	else
-		cp -r ./output/target/lib/modules/${arrIN[0]}  ../kernel-modules/${arrIN[0]}
+		cp -r ./output/target/lib/modules/${arrIN[0]}  ../../releases/modules/${arrIN[0]}
 	fi
    done)
 done
 
 echo "Building archive kernel-modules-`date +%Y-%m-%d`.tar.Z"
 cd ..
-tar -cvzf ../releases/kernel-modules-`date +%Y-%m-%d`.tar.Z kernel-modules/
+cd ..
+cd releases
+tar -cvzf kernel-modules-`date +%Y-%m-%d`.tar.Z modules/
 echo "Finished building kernel modules!"
