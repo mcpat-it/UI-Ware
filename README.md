@@ -38,13 +38,16 @@ Please see below for instructions on how to install UI-Ware and associated utils
 ## Install
 > ⚠️ **Cause of lacking of all devices, this is only tested on my UDM Base and will only work for v2.4.x and greater!** 
 
+Two simple steps:
+
 1. Connect to your device via SSH and type the following command to download and install UI-Ware. NOTE: always [this link](https://github.com/pwallner/UI-Ware/releases) check for the latest release.
 
     ```sh
-    apt-get update && cd /tmp && wget https://ui-ware.mcpat.com/repo/ui-ware_1.0.0_all.deb && dpkg -i ui-ware_1.0.0_all.deb &&  rm ui-ware_1.0.0_all.deb
+    cd /tmp && wget https://ui-ware.mcpat.com/repo/ui-ware_1.0.0_all.deb && dpkg -i ui-ware_1.0.0_all.deb &&  rm ui-ware_1.0.0_all.deb
     ```
-    
-2. Alternative you can use an automated script **setup-uiware.sh** as shown below [⚠️NOT WORKING YET!!]
+or
+
+1. Alternative you can use an automated script **setup-uiware.sh** as shown below [⚠️NOT WORKING YET!!]
 
     ```sh
     cd /tmp
@@ -53,7 +56,7 @@ Please see below for instructions on how to install UI-Ware and associated utils
     ./setup-uiware.sh
     ```
     
-3. Check installation:
+2. Check installation:
 
     ```sh
     systemctl status ui-ware
@@ -62,10 +65,10 @@ Please see below for instructions on how to install UI-Ware and associated utils
  This will install the complete ui-ware system to `/mnt/.rwfs/data/data/opt` as well as create a link to the `/opt` folder and finally start the service `ui-ware`.  
 
 ## How to use UI-Ware
-It's like a debian system, use the `apt` commands like `apt-get update` `apt-get upgrade` and the most important one `apt-get install <package>`.
+It's like a debian system, use the `apt` commands like `apt-get install <package>`.
 
 ## Upgrades
-Upgrades are not really necessary caused by the `apt` feature. But if something happens, you can "safely" download new versions and extract over prior releases. Please note, that all basic files will be overwritten, all other files will stay untouched.
+Upgrades can be done by `apt-get update` and `apt-get upgrade` are not really necessary caused by the `apt` feature. Please note, that all files will be installed in "opt", system files will stay untouched.
 
 ## Packages
 The main reason for developing the UI-Ware were the missing features:
@@ -79,20 +82,19 @@ But during developing of the first feature (NFS), I generated 170 software packa
 
 So I can provide now additionly fully functional apps:
 
- - GCC 6.4.0
- - Automake
- - Autoconf
+ - GCC 12.2.0
+ - Perl
+ - Python
  - Make
- - Openssl 1.1.1
+ - Binutils
  - wireguard tools
  - ftp
- - wget (with SSL support)
- - tar
  - Git
+ - Git-lfs
  
 and many many more.
 ## The future of UI-Ware
-TBC...
+Maybe sime developers will assist and provide packages. Maybe orher repos can find here new home.
 
 ## Support my work
 I'm a working single dad and this is only my hobby which I did in my rare free time. So I really appreciate if you make a small donation to let me buy some sweets for my son!
