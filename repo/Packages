@@ -68,7 +68,7 @@ Priority: optional
 Section: contrib/utils
 Maintainer: Repository
 Installed-Size: 24
-Filename: /opt/mnt/hdd/unifi/building/Packages/git/ui-ware_1.0.0_all.deb
+Filename: ./ui-ware_latest_all.deb
 Size: 4260
 MD5sum: 5c7738609d38bd7525d03071e9d0a2b9
 SHA1: 0e991fbce2defd4859e7f95edf9767e41cc539bd
