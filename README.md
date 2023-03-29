@@ -37,45 +37,29 @@ Please see below for instructions on how to install UI-Ware and associated utils
 
 
 ## Install
-1. We first need to download the tar file onto the device. Connect to it via SSH and type the following command to download the tar file. NOTE: always [this link](https://github.com/pwallner/UI-Ware/releases) check for the latest release.
+> ⚠️ **Cause of lacking of all devices, this is only tested on my UDM Base and will only work for v2.4.x and greater!** 
+1. Connect to your device via SSH and type the following command to download and install UI-Ware. NOTE: always [this link](https://github.com/pwallner/UI-Ware/releases) check for the latest release.
 
     ```sh
-    curl -LJo wireguard-kmod.tar.Z https://github.com/pwallner/UI-Ware/releases/download/v1.0/ui-ware-1.0.tar.Z
+    apt-get update && cd /tmp && wget https://ui-ware.mcpat.com/repo/ui-ware_1.0.0_all.deb && dpkg -i ui-ware_1.0.0_all.deb &&  rm ui-ware_1.0.0_all.deb
     ```
+    
+2. Alternative you can use an automated script **setup-uiware.sh** as shown below [⚠️NOT WORKING YET!!]
 
-2. From this directory type the following to extract the files:
-
-	* For the UDM, UDM-Pro, UDM-SE, or UXG-Pro, extract the files into `/mnt/data/opt`
-	
-		```sh
-		tar -C /mnt/data -xvzf ui-ware-1.0.tar.Z
-		```
-	* For the UDR, extract the files into `/data/opt`
-	
-		```sh
-		tar -C /data -xvzf ui-ware-1.0.tar.Z
-		```
-
-2. Once the extraction is complete, cd into `/mnt/data/opt` (or `/data/opt` for UDR) and run the script **setup-uiware.sh** as shown below
-    ```
-    cd /mnt/data/opt
+    ```sh
+    cd /tmp
+    wget https://ui-ware.mcpat.com/src/setup-uiware.sh
     chmod +x setup-uiware.sh
     ./setup-uiware.sh
     ```
- This will setup the complete ui-ware system to `/mnt/data/opt` or `/data/opt` as well as create a link to the `/opt` folder and finally load the basic apps which are needed.  
+    
+3. Check installation:
 
-## Surviving Reboots
-> ⚠️ **You will need to run setup-uiware.sh whenever the UDM is rebooted as the symlink to `/opt` have to be recreated.** 
-
-* For the UDM or UDM Pro, Boostchicken has a package that can be installed to automatically run the UI-Ware script anytime the router is rebooted. Just follow the instructions [here](https://github.com/boostchicken/udm-utilities/tree/master/on-boot-script) and drop the **10-uiware.sh** script into the `/mnt/data/on_boot.d` directory when finished.
-* For the UDM-SE or UDR, create a systemd boot service to run the setup script at boot by running the following commands:
-	
-	```sh
-	curl -Lo /etc/systemd/system/setup-uiware.service https://raw.githubusercontent.com/pwallner/UI-Ware/main/src/boot/setup-uiware.service
-	systemctl daemon-reload
-	systemctl enable setup-uiware
-	```
-* Note this only adds the setup script to start at boot. If you also want to bring up some apps at boot, you will need to use additional boot scripts.
+    ```sh
+    systemctl status ui-ware
+    ```
+    
+ This will install the complete ui-ware system to `/mnt/.rwfs/data/data/opt` as well as create a link to the `/opt` folder and finally start the service `ui-ware`.  
 
 ## How to use UI-Ware
 It's like a debian system, use the `apt` commands like `apt-get update` `apt-get upgrade` and the most important one `apt-get install <package>`.
@@ -85,11 +69,11 @@ Upgrades are not really necessary caused by the `apt` feature. But if something 
 
 ## Packages
 The main reason for developing the UI-Ware were the missing features:
- - NFS server/client for easy exchange of data
- - CIFS server (client) for easy exchange of data
- - OpenVPN server (client)
- - Wireguard[^1]
- - FTP server
+ - NFS server/client for easy exchange of data [TBA]
+ - CIFS server (client) for easy exchange of data [TBA]
+ - OpenVPN server (client) [TBA]
+ - Wireguard[^1] [TBA]
+ - FTP server [TBA]
 
 But during developing of the first feature (NFS), I generated 170 software packages because I was compiling directly on my own UDM. Don't ask why, I had my reasons...
 
