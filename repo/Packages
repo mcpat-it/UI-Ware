@@ -1,3 +1,27 @@
+Package: vlmcsd
+Architecture: arm64
+Version: 1113
+Priority: optional
+Section: contrib/utils
+Maintainer: kissshot
+Installed-Size: 135
+Depends: opt-libc6 (>= 2.24)
+Filename: ./vlmcsd_1113_arm64.deb
+Size: 42234
+MD5sum: 648c591f64bacf246391cb00b06cfdd6
+SHA1: e54b7dcc3c1b797731123210f73c797f44fadba7
+SHA256: 9cf33b95c6fe98f6c1181fb0e84384c9fdc429ab444a2c6339401c38800db15f
+SHA512: ed181b43175e07bf581396e7bb3def5afb453862db42a5ee74b3779426a0a331e2381f8727be3adf67da97a8ba5c29e0bc017a5d1912eb9c72d1469f1f949e14
+Homepage: https://github.com/kkkgo/vlmcsd
+Description: Portable open-source KMS Emulator in C
+ vlmcsd is a replacement for Microsoft's KMS server It contains vlmcs a KMS test client,
+ mainly for debugging purposes, that also can "charge" a genuine KMS server
+ designed to run on an always-on or often-on device,e.g. router, NAS Box, ...
+ intended to help people who lost activation of their legally-owned licenses,
+ e.g. due to a change of hardware (motherboard, CPU, ...)
+ vlmcsd is not a one-click activation or crack tool intended to activate illegal
+ copies of software (Windows, Office, Project, Visio)
+
 Package: opt-libgcc1
 Architecture: arm64
 Version: 12.2.0
