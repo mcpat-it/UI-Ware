@@ -68,7 +68,7 @@ or
 It's like a debian system, use the `apt` commands like `apt-get install <package>`.
 
 ## Upgrades
-Upgrades can be done by `apt-get update` and `apt-get upgrade` are not really necessary caused by the `apt` feature. Please note, that all files will be installed in "opt", system files will stay untouched.
+Upgrades can be done by `apt-get update` and `apt-get upgrade`. Please note, that all files from UI-Ware will be installed in "opt", system files will stay untouched.
 
 ## Packages
 The main reason for developing the UI-Ware were the missing features:
