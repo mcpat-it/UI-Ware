@@ -27,7 +27,6 @@ Please see below for instructions on how to install UI-Ware and associated utils
 ## Table of Contents
 
   * [Install](#install)
-  * [Surviving Reboots](#surviving-reboots)
   * [How to use UI-Ware](#how-to-use-ui-ware)
   * [Upgrades](#upgrades)
   * [Packages](#packages)
