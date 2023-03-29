@@ -1,0 +1,57 @@
+Package: opt-libgcc1
+Architecture: arm64
+Version: 12.2.0
+Priority: required
+Section: libs
+Maintainer: Repository
+Installed-Size: 488
+Depends: opt-libc6 (>= 2.24)
+Filename: ./opt-libgcc1_12.2.0_arm64.deb
+Size: 140186
+MD5sum: 21be78d55e6177fefe404615960c1e44
+SHA1: 07bd0fe59aade61ac589005413d6ee9993b8459a
+SHA256: 50f0c772f8f362bb2e12f95af1248991855b99e01c6a5979e3f97f6d6f1a97a4
+SHA512: 41a98d0870d43090df2490df788d9c89c5c01935400080d64316f6cca8219b6490e5eb867a2e19307a4a6a6b1b37af80152ec56cedb22ed89faad396f37766cc
+Homepage: http://gcc.gnu.org/
+Description: GCC support library
+ Shared version of the support library, a library of internal subroutines
+ that GCC uses to overcome shortcomings of particular machines, or
+ special needs for some languages.
+
+Package: opt-libc6
+Architecture: arm64
+Version: 2.24
+Priority: required
+Section: libs
+Maintainer: Repository
+Installed-Size: 27358
+Filename: ./opt-libc6_2.24_arm64.deb
+Size: 5899944
+MD5sum: 35a753daa323366a39f2b910540e5003
+SHA1: 7ddaa53d0126f832c41394fdda57922c40b37617
+SHA256: f56d9e4fa10d9ac48ac4e29a96ebc8e03c29b4824ce5b64214643dc2cfdf6d69
+SHA512: f4b214b49ccc92de5ae7689fe7a1019731625cf57aaa06f4f754b62bac676f61669a11c2000382074f7d3aef990cd8d916aa7b5cb8275b5302f2f19d7889606f
+Homepage: http://www.gnu.org/software/libc/libc.html
+Description: GNU C Library: Shared libraries
+ Contains the standard libraries that are used by nearly all programs on
+ the system. This package includes shared versions of the standard C library
+ and the standard math library, as well as many others.
+
+Package: ui-ware
+Architecture: all
+Version: 1.0.0
+Priority: optional
+Section: contrib/utils
+Maintainer: Repository
+Installed-Size: 24
+Filename: ./ui-ware_1.0.0_all.deb
+Size: 4260
+MD5sum: 5c7738609d38bd7525d03071e9d0a2b9
+SHA1: 0e991fbce2defd4859e7f95edf9767e41cc539bd
+SHA256: 2e2fcb89ed2ce4ddf6746da663f690fa3ea43884f147605ee62206ef3413fcdd
+SHA512: 8539aafba6b092c3d4fd079fae473a6fe019d4b1184246eedfb1eb22cfd6fa36d667260ca3d320ec8a6ab1f69dcfc1c4afc0bf1794515f8765dd0cdd18aefd17
+Homepage: https://ui-ware.mcpat.com
+Description: UI-Ware
+ Mount persistent to opt on boot and links to repository for
+ all packages from UI-Ware
+
