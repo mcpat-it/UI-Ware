@@ -87,12 +87,13 @@ Section: net
 Maintainer: Repository
 Installed-Size: 160
 Depends: opt-libc6 (>= 2.24)
+Conflicts: wireguard-tools
 Filename: ./opt-wireguard-tools_1.0.20210914_arm64.deb
-Size: 46682
-MD5sum: f908d6480044b3e3201ee51cb5d33edb
-SHA1: 114cc612a5d936e4b614956af6749b8be504a0f0
-SHA256: 7d7d9f6aebc49f6326d28be4e625bc2358f788bf64929b78fc103ce4964face8
-SHA512: 8f6bffa6203a563627be8c7da4b34273d27fae3df5a077acdec6467c9f46bdc7519b21ebfc044427c0bd3dbae50cd17abb722e38005a564521223b662d107940
+Size: 46692
+MD5sum: 609ce04e150c2200e29f07b867ef6908
+SHA1: 94ad48e1fc15bdac5def9766d898d858a91a43a5
+SHA256: 787a52875317ae9c2262f8d7a94ce39855c1b3c7db4fbbd902ea03536b34e41d
+SHA512: 5bebccb4ca6b4d7e60ac1fd685208222e0aa31f94533ba5736e395de98f0a1bce716586adc15a234a31762a57756057295cc7f1a13b677dce693d1a4e3ad1a48
 Homepage: https://www.wireguard.com
 Description: fast, modern, secure kernel VPN tunnel (userland utilities)
  WireGuard is a novel VPN that runs inside the Linux Kernel and uses
