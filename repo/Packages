@@ -42,6 +42,35 @@ Description: GCC support library
  that GCC uses to overcome shortcomings of particular machines, or
  special needs for some languages.
 
+Package: wireguard-tools
+Architecture: arm64
+Version: 1.0.20210914
+Priority: optional
+Section: net
+Maintainer: Repository
+Installed-Size: 160
+Depends: opt-libc6 (>= 2.24)
+Filename: ./wireguard-tools_1.0.20210914_arm64.deb
+Size: 46682
+MD5sum: 63a991b40150bb6d3842f58755394a02
+SHA1: 5431732de6481977c80039e4982a18317e687588
+SHA256: 964a48078d478bfe085f7bde29d91059d9a08e1bc6123a1cd5d8b42a97328bda
+SHA512: 22866667b0d1e54046544e306367d578a450d04e59d81a6ee68e9c3d03bb50d8584beb131635d07205b6420c077e4b425ec2067ee0e3f1532436f4816d1c974d
+Homepage: https://www.wireguard.com
+Description: fast, modern, secure kernel VPN tunnel (userland utilities)
+ WireGuard is a novel VPN that runs inside the Linux Kernel and uses
+ state-of-the-art cryptography (the "Noise" protocol). It aims to be
+ faster, simpler, leaner, and more useful than IPSec, while avoiding
+ the massive headache. It intends to be considerably more performant
+ than OpenVPN. WireGuard is designed as a general purpose VPN for
+ running on embedded interfaces and super computers alike, fit for
+ many different circumstances. It runs over UDP.
+ .
+ This package contains command-line tools to interact with the
+ WireGuard kernel module.  Currently, it provides only a single tool:
+ .
+ wg: set and retrieve configuration of WireGuard interfaces
+
 Package: opt-libc6
 Architecture: arm64
 Version: 2.24
@@ -60,24 +89,6 @@ Description: GNU C Library: Shared libraries
  Contains the standard libraries that are used by nearly all programs on
  the system. This package includes shared versions of the standard C library
  and the standard math library, as well as many others.
-
-Package: ui-ware
-Architecture: all
-Version: 1.0.0
-Priority: optional
-Section: contrib/utils
-Maintainer: Repository
-Installed-Size: 24
-Filename: ./ui-ware_latest_all.deb
-Size: 4260
-MD5sum: 5c7738609d38bd7525d03071e9d0a2b9
-SHA1: 0e991fbce2defd4859e7f95edf9767e41cc539bd
-SHA256: 2e2fcb89ed2ce4ddf6746da663f690fa3ea43884f147605ee62206ef3413fcdd
-SHA512: 8539aafba6b092c3d4fd079fae473a6fe019d4b1184246eedfb1eb22cfd6fa36d667260ca3d320ec8a6ab1f69dcfc1c4afc0bf1794515f8765dd0cdd18aefd17
-Homepage: https://ui-ware.mcpat.com
-Description: UI-Ware
- Mount persistent to opt on boot and links to repository for
- all packages from UI-Ware
 
 Package: ui-ware
 Architecture: all
