@@ -1,3 +1,23 @@
+Package: opt-libc6
+Architecture: arm64
+Version: 2.24-1
+Priority: required
+Section: libs
+Source: glibc
+Maintainer: Repository
+Installed-Size: 27358
+Filename: ./opt-libc6_2.24-1_arm64.deb
+Size: 5900644
+MD5sum: cb85e0cae0177d92e7ff50c309a4a51c
+SHA1: b241488fbc611d24d503659737f6ee25ba0092ee
+SHA256: 9c3f59d1996b491578278df3c0b2404873147a6d321dbacc7f4d39a45c23a449
+SHA512: 4dc83bbc0e9fb57baaeecaaf6907c96047f9d1a7c137ac8612ad7eb34ff29bc61148213e222bdd91c9a494c6e66b3649c0ba440911f4845502581c3e617e1882
+Homepage: http://www.gnu.org/software/libc/libc.html
+Description: GNU C Library: Shared libraries
+ Contains the standard libraries that are used by nearly all programs on
+ the system. This package includes shared versions of the standard C library
+ and the standard math library, as well as many others.
+
 Package: vlmcsd
 Architecture: arm64
 Version: 1113
@@ -41,25 +61,6 @@ Description: GCC support library
  Shared version of the support library, a library of internal subroutines
  that GCC uses to overcome shortcomings of particular machines, or
  special needs for some languages.
-
-Package: opt-libc6
-Architecture: arm64
-Version: 2.24
-Priority: required
-Section: libs
-Maintainer: Repository
-Installed-Size: 27358
-Filename: ./opt-libc6_2.24_arm64.deb
-Size: 5899944
-MD5sum: 35a753daa323366a39f2b910540e5003
-SHA1: 7ddaa53d0126f832c41394fdda57922c40b37617
-SHA256: f56d9e4fa10d9ac48ac4e29a96ebc8e03c29b4824ce5b64214643dc2cfdf6d69
-SHA512: f4b214b49ccc92de5ae7689fe7a1019731625cf57aaa06f4f754b62bac676f61669a11c2000382074f7d3aef990cd8d916aa7b5cb8275b5302f2f19d7889606f
-Homepage: http://www.gnu.org/software/libc/libc.html
-Description: GNU C Library: Shared libraries
- Contains the standard libraries that are used by nearly all programs on
- the system. This package includes shared versions of the standard C library
- and the standard math library, as well as many others.
 
 Package: ui-ware
 Architecture: all
