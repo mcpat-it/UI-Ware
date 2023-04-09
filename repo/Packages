@@ -89,13 +89,13 @@ Version: 1.0.0
 Priority: optional
 Section: contrib/utils
 Maintainer: Repository
-Installed-Size: 24
+Installed-Size: 30
 Filename: ./ui-ware_1.0.0_all.deb
-Size: 4322
-MD5sum: 66c942fa77670ebb798fee4925dfc772
-SHA1: feb70e5a2d809c099d15d55f699264d2c99149c3
-SHA256: bf313e3e4bb0dafeb243f5bcfda5a20634162a76ae16d76ab9ae05411501bc09
-SHA512: 69da041f1d31a338bc6a5564a401e507617250a11fc6c3bca2f7130fe8eba42152c239acc47abcdb3e3926b0ee756c99bc0217369fadcd0cc9b75aafea0c26c0
+Size: 5088
+MD5sum: 0f4b6f93bd04bed91e54352e72f2ac85
+SHA1: 9326087aa1ca15731c820ea84da53c115d963c1f
+SHA256: 5c245806b877cd01f382ef519ac37a3b339438bef79bab0ca60194fe3b9ba054
+SHA512: 01b7df7c1c4b09d289977d97ed1e371dbed73f26a33852588491b092e8aaaa4bd9f03d47589c3e183f79e65503f24657cb4a6c66e0fe76ba56f61ff6a2107b77
 Homepage: https://ui-ware.mcpat.com
 Description: UI-Ware
  Mount persistent to opt on boot and links to repository for
