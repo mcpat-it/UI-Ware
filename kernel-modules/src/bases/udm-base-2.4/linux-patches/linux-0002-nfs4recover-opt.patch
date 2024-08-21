@@ -1,0 +1,11 @@
+--- a/fs/nfsd/nfs4recover.c	2023-02-24 08:52:08.000000000 +0100
++++ b/fs/nfsd/nfs4recover.c	2023-03-07 10:44:20.000000000 +0100
+@@ -62,7 +62,7 @@
+ };
+ 
+ /* Globals */
+-static char user_recovery_dirname[PATH_MAX] = "/var/lib/nfs/v4recovery";
++static char user_recovery_dirname[PATH_MAX] = "/opt/var/lib/nfs/v4recovery";
+ 
+ static int
+ nfs4_save_creds(const struct cred **original_creds)
