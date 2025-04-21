@@ -1,0 +1,503 @@
+Package: opt-liblzma5
+Architecture: arm64
+Version: 5.4.1
+Priority: optional
+Section: libs
+Maintainer: Repository
+Installed-Size: 206
+Depends: opt-libc6 (>= 2.24)
+Filename: ./opt-liblzma5_5.4.1_arm64.deb
+Size: 96644
+MD5sum: 2234b4bf2584b4defe6af6b7e4f253d5
+SHA1: 0a285add0e924f07156ba5bf57954269b0f7625c
+SHA256: 5830b0ecbca9f30d901bd9b2beb2864d7e622ab9bbb29067b44217bc671e73db
+SHA512: 67c9533e72c4e004cfce181c5e0d1cfa306bafa3b20dc1c4f72701b56d8700f4b8ef78c7b1c71583e88102e047ef2ffe4180fd9928aa6c80d320924c5a471fdc
+Homepage: https://tukaani.org/xz/
+Description: XZ-format compression library
+ XZ is the successor to the Lempel-Ziv/Markov-chain Algorithm
+ compression format, which provides memory-hungry but powerful
+ compression (often better than bzip2) and fast, easy decompression.
+ .
+ The native format of liblzma is XZ; it also supports raw (headerless)
+ streams and the older LZMA format used by lzma. (For 7-Zip's related
+ format, use the p7zip package instead.)
+
+Package: opt-libc6
+Architecture: arm64
+Version: 2.24-1
+Priority: required
+Section: libs
+Source: glibc
+Maintainer: Repository
+Installed-Size: 27358
+Filename: ./opt-libc6_2.24-1_arm64.deb
+Size: 10361900
+MD5sum: 6b20a00aaf032e054cfdf9b935dc3818
+SHA1: b5e7c0d6a0b20ded9e9f8ed2d97fbae4a4b28e98
+SHA256: 4b7f80307d58b6b323e0bb939c9e4876910de6760db9a1121253117c04ca8fb6
+SHA512: 4ec065539c1322d1bb3e4152efb70c3f6d430076ce8a1c96077cd9baa12931020b6f38db9ac021621824a656dfa0fbe85ddf0b31e2287002838db0c4560ef737
+Homepage: http://www.gnu.org/software/libc/libc.html
+Description: GNU C Library: Shared libraries
+ Contains the standard libraries that are used by nearly all programs on
+ the system. This package includes shared versions of the standard C library
+ and the standard math library, as well as many others.
+
+Package: opt-rpcbind
+Architecture: arm64
+Version: 1.2.6
+Priority: standard
+Section: net
+Maintainer: Repository
+Installed-Size: 152
+Depends: libsystemd0, opt-libc6 (>= 2.24), opt-libtirpc3 (>= 1.3.3)
+Filename: ./opt-rpcbind_1.2.6_arm64.deb
+Size: 38042
+MD5sum: 35713862c0d8eb51d161633fd355b146
+SHA1: 9db340f1afe297738673f99358d87d7e542eff09
+SHA256: fa45bb3af0b3da7aed48198625a06dccb5ee14f67c22817daf15c941b9babc87
+SHA512: 8899c56ee831791e99ee37c96c37a96bec85ec7c3dcbdce2ce0ca1af054d731fdc6bb2951f3c2b1091479267c77d60660002537c97bfdc5aaef39fb78146d8c1
+Homepage: http://sourceforge.net/projects/rpcbind/
+Description: converts RPC program numbers into universal addresses
+ The rpcbind utility is a server that converts RPC program numbers
+ into universal addresses.
+
+Package: vlmcsd
+Architecture: arm64
+Version: 1113
+Priority: optional
+Section: contrib/utils
+Maintainer: kissshot
+Installed-Size: 135
+Depends: opt-libc6 (>= 2.24)
+Filename: ./vlmcsd_1113_arm64.deb
+Size: 62700
+MD5sum: 4c1d2d6d4037ff7e0e256a96365e3ea5
+SHA1: c0f94348fd7c34a8fed2f0b7acd4d991c9bcaaf7
+SHA256: 1280bbcc01024017dd82d3c55f487be33de635992745722eb5ac2a71a1bb8c12
+SHA512: f1fdefbf60d824f908f37b169ccadffc735ad6927e218f64287f09371ffd6ffde9d70fe9f4b331e8fd4140024ea586352dfbe5b62502737283d0760e0f9169a2
+Homepage: https://github.com/kkkgo/vlmcsd
+Description: Portable open-source KMS Emulator in C
+ vlmcsd is a replacement for Microsoft's KMS server It contains vlmcs a KMS test client,
+ mainly for debugging purposes, that also can "charge" a genuine KMS server
+ designed to run on an always-on or often-on device,e.g. router, NAS Box, ...
+ intended to help people who lost activation of their legally-owned licenses,
+ e.g. due to a change of hardware (motherboard, CPU, ...)
+ vlmcsd is not a one-click activation or crack tool intended to activate illegal
+ copies of software (Windows, Office, Project, Visio)
+
+Package: opt-readline8
+Architecture: arm64
+Version: 8.3
+Priority: optional
+Section: libs
+Maintainer: Repository
+Installed-Size: 507
+Depends: opt-libc6 (>= 2.24), opt-libncursesw6 (>= 6.3)
+Filename: ./opt-readline8_8.3_arm64.deb
+Size: 186100
+MD5sum: 093437a2b56d87eff7a9c75c31a9e6bc
+SHA1: 661e441e69ceaf08a42bbf5c066d5aaa4ad6bf68
+SHA256: 94254e426ea103a324fd5cd5d549af615de4ba2d767f4f757f1bf6e4c9bac5e4
+SHA512: 70412c56024a8375114c7d735b27c8d2c6c8962d808d6148ca5a50c4b8ab600e8e685d54bcfef57d1266799e884bc446ab619eeb71e23fe6398e73b4bdbcf623
+Description: GNU readline and history libraries, run-time libraries
+ The GNU readline library aids in the consistency of user interface
+ across discrete programs that need to provide a command line
+ interface.
+ .
+ The GNU history library provides a consistent user interface for
+ recalling lines of previously typed input.
+
+Package: opt-keyutils
+Architecture: arm64
+Version: 1.6.1
+Priority: optional
+Section: admin
+Maintainer: Repository
+Installed-Size: 289
+Depends: opt-libc6 (>= 2.24)
+Filename: ./opt-keyutils_1.6.1_arm64.deb
+Size: 41188
+MD5sum: 8afdf556f225f7d1d2ae82736b0e6fd0
+SHA1: fb90b11de1bf979dc84d2e2f9de15914d1460b9d
+SHA256: 91305b017577f96cc6323e765d62deb6b74493efb94d2009239e3c60be4b0327
+SHA512: 3d0c752eedc5eed0812d518d0968c20c274fa58e658559e79a9ce260db5805d74e5cb200df70f09ce0ca80adfa3a51d53f1856d08211eb792deff682cbce0c5a
+Homepage: https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git
+Description: Linux Key Management Utilities
+ Keyutils is a set of utilities for managing the key retention facility in the
+ kernel, which can be used by filesystems, block devices and more to gain and
+ retain the authorization and encryption keys required to perform secure
+ operations.
+
+Package: opt-libtirpc3
+Architecture: arm64
+Version: 1.3.3
+Priority: optional
+Section: libs
+Maintainer: Repository
+Installed-Size: 211
+Depends: opt-libc6 (>= 2.24)
+Filename: ./opt-libtirpc3_1.3.3_arm64.deb
+Size: 73350
+MD5sum: f1d281bd023fdc43079a65ca8216c267
+SHA1: eb0f2a83611f8d35f0168a5eeabac9c14c2f7e95
+SHA256: 4ba7d5bbb23d036453e2dc692a26b15e78bb9f13d72ceae47eddc745ce95d475
+SHA512: a0c1cb355e4ba7a889792e9f109a2bd4b945f2ee6ec9a981da0fa460ea11ee5992537a66d501bf10b610075b3326833fb2038f2034f724c9a9f01528b16360ec
+Homepage: http://sourceforge.net/projects/libtirpc
+Description: transport-independent RPC library
+ This package contains a port of Sun's transport-independent RPC library to
+ Linux. The library is intended as a replacement for the RPC code in the GNU C
+ library, providing among others support for RPC (and in turn, NFS) over IPv6.
+
+Package: opt-libncursesw6
+Architecture: arm64
+Version: 6.3
+Priority: optional
+Section: libs
+Maintainer: Repository
+Installed-Size: 802
+Depends: opt-libc6 (>= 2.24)
+Filename: ./opt-libncursesw6_6.3_arm64.deb
+Size: 257504
+MD5sum: 490b5a127d926e5f2c64ebc3b936bb38
+SHA1: 6ff61ae128d9551a5f8c71ffdd78561922c39ba1
+SHA256: 0485cfd4375b1d83f2594b2652f6b0db72d2fd2b275d20d1156e63a2e5cdcb01
+SHA512: 22f7898768fb305c388ffcf2b7851b7d1f9d49c894c4bc9a4f9507964f66d8704df0ac1e8c1a2606d1a761d0a2fdbed0b6863097dcfd250a3c46565fd264f820
+Homepage: https://www.freedesktop.org/wiki/Software/systemd
+Description: shared libraries for terminal handling (wide character legacy version)
+ The ncurses library routines are a terminal-independent method of
+ updating character screens with reasonable optimization.
+ .
+ This package contains the legacy shared libraries necessary to run
+ programs compiled with ncursesw, which includes support for wide
+ characters.
+
+Package: opt-util-linux
+Architecture: arm64
+Version: 2.38.1
+Priority: optional
+Section: admin
+Maintainer: Repository
+Installed-Size: 19044
+Depends: opt-libbz2 (>= 1.0.8), opt-libc6 (>= 2.24), opt-libmagic1 (>= 5.41), opt-libncursesw6 (>= 6.3), opt-libudev1 (>= 1.6.3), opt-readline8 (>= 8.3), opt-zlib1g (>= 1.2.13)
+Filename: ./opt-util-linux_2.38.1_arm64.deb
+Size: 6003036
+MD5sum: a3f91c75b154c16fa85b30991f605551
+SHA1: 654bec51bd8c7433d52d53f5997ebe53e70ef345
+SHA256: acb235f0aa383cf577f3d7a3ccaa5387e072d81610f358bd9dee06a7681b60b4
+SHA512: e6b4c9acf8e51779ba5384502ab1954d361e13d6e9b86689260159fdd60b9271fdee7a2a4f3aac269b0fc540fdd97443bb253babe2a443d7b0fe0d33609626ba
+Homepage: https://github.com/karelzak/util-linux
+Description: Miscellaneous system utilities for Linux
+ util-linux is a standard package distributed by the
+ Linux Kernel Organization for use as part of the
+ Linux operating system.
+ .
+ A fork, util-linux-ng (with ng meaning "next generation"),
+ was created when development stalled, but as of January
+ 2011 has been renamed back to util-linux, and is the
+ official version of the package.
+
+Package: opt-libsqlite3
+Architecture: arm64
+Version: 3.41
+Priority: optional
+Section: libs
+Maintainer: Repository
+Installed-Size: 1310
+Depends: opt-libc6 (>= 2.24), opt-zlib1g (>= 1.2.13)
+Filename: ./opt-libsqlite3_3.41_arm64.deb
+Size: 709342
+MD5sum: 27d657d225fa5cc648b1888f3f802fc5
+SHA1: 32067995003b925389a3ee9d793795df7e3cc46c
+SHA256: a8ef0dab2f59357faa86703ae7da94aa80bf4e0f8f8cc6f8c6674a47ce7e7a41
+SHA512: c336bd03bef23e57d6089e22d065a2604188c1c63c00c29629b846b71e8fe4b2dd9eeb19547e77ea1a9a4b4449e06fd6b25a7fde516e1d32eda0fb6cef86caf5
+Homepage: https://www.sqlite.org/
+Description: SQLite 3 shared library
+ SQLite is a C library that implements an SQL database engine.
+ Programs that link with the SQLite library can have SQL database
+ access without running a separate RDBMS process.
+
+Package: opt-libbz2
+Architecture: arm64
+Version: 1.0.8
+Priority: important
+Section: libs
+Maintainer: Repository
+Installed-Size: 77
+Depends: opt-libc6 (>= 2.24)
+Filename: ./opt-libbz2_1.0.8_arm64.deb
+Size: 32004
+MD5sum: 8ad4ede8d4e6ebb1a33491a98d87f7c6
+SHA1: 50e20a2464d7d0cad81360643159d63fcc6cd292
+SHA256: ac68066ae76f9150140c0a88546e0f65566c5323d5ea7b656cd36f3301ed8f56
+SHA512: e76491c18914e62677aa22145856632e1c8fd14d8c6f1a10444ca9bbea040f3ec5ca02f6ebc80f13adddcc6708ca961b2046dab6ed401cfcfb1e731b334f7357
+Homepage: https://sourceware.org/bzip2/
+Description: high-quality block-sorting file compressor library - runtime
+ This package contains libbzip2 which is used by the bzip2 compressor.
+ .
+ bzip2 is a freely available, patent free, data compressor.
+ .
+ bzip2 compresses files using the Burrows-Wheeler block-sorting text
+ compression algorithm, and Huffman coding.  Compression is generally
+ considerably better than that achieved by more conventional
+ LZ77/LZ78-based compressors, and approaches the performance of the PPM
+ family of statistical compressors.
+ .
+ The archive file format of bzip2 (.bz2) is incompatible with that of its
+ predecessor, bzip (.bz).
+
+Package: opt-zlib1g
+Architecture: arm64
+Version: 1.2.13
+Priority: required
+Section: libs
+Maintainer: Repository
+Installed-Size: 142
+Depends: opt-libc6 (>= 2.24)
+Filename: ./opt-zlib1g_1.2.13_arm64.deb
+Size: 62298
+MD5sum: 9ab3cac6f93b8692e7104d7341173c73
+SHA1: be5f9ab9ad19835361575815294b275391364d20
+SHA256: 150765f6b0c3b2b611fc90f6cb8a1ab13b529767adabae89f2837f40ede7daa8
+SHA512: b122553f84e3a33c8f504db2a4692428731d16523dfe21168c3de463d262cdd01da5f98d53cbf280d842750ffe0d972e8a073c8022783de908a32c3ca64a4635
+Homepage: http://zlib.net/
+Description: compression library - runtime
+ zlib is a library implementing the deflate compression method found
+ in gzip and PKZIP.  This package includes the shared library.
+
+Package: opt-libcap2
+Architecture: arm64
+Version: 2.67
+Priority: optional
+Section: libs
+Maintainer: Repository
+Installed-Size: 66
+Depends: opt-libc6 (>= 2.24)
+Filename: ./opt-libcap2_2.67_arm64.deb
+Size: 23572
+MD5sum: b423077fddc3d7d1b19bdb1737f2a790
+SHA1: d542c4ebc8cf2368f28f4f40469548d0aff6e352
+SHA256: f061fd2d4503154eeccd7fe6a7c1146d3802abe52b72b760ae405f1b3b4a2c03
+SHA512: f1d9e742c4a37c38aa1e782ee1a3a7b39d6b0cde744b4e7014988289f5afde6aef183c6b8dc2a0fd2b85781fee765c3d1299ecf0fca9175b779baae73a43ff17
+Homepage: https://sites.google.com/site/fullycapable/
+Description: POSIX 1003.1e capabilities (library)
+ Libcap implements the user-space interfaces to the POSIX 1003.1e capabilities
+ available in Linux kernels. These capabilities are a partitioning of the all
+ powerful root privilege into a set of distinct privileges.
+ .
+ This package contains the shared library.
+
+Package: opt-libevent-core
+Architecture: arm64
+Version: 2.1.12
+Priority: optional
+Section: libs
+Maintainer: Repository
+Installed-Size: 272
+Depends: opt-libc6 (>= 2.24)
+Filename: ./opt-libevent-core_2.1.12_arm64.deb
+Size: 92196
+MD5sum: d0afc5bda4c138458e51979fde4a346f
+SHA1: 34b4907f34b8b821430e06a91cbc0feefc8a1a18
+SHA256: 4956a8dc3dcd06228bae4a77f319d7bfe03b73ae26b3f4033b121bbb2e637fb4
+SHA512: 109adb30ee23a8789184a7471e17cf8d95fe3c7f4c9d24e74e7d551707051ce9720f8acd7c521e3a1b2d907d5b19f7d92b548f00b860e97ed58c7978fb5912c2
+Homepage: https://libevent.org/
+Description: Asynchronous event notification library (core)
+ Libevent is an asynchronous event notification library that provides a
+ mechanism to execute a callback function when a specific event occurs
+ on a file descriptor or after a timeout has been reached.
+ .
+ It is meant to replace the asynchronous event loop found in
+ event driven network servers. Currently, libevent supports /dev/poll,
+ kqueue(2), event ports, select(2), poll(2) and epoll(4).
+ .
+ The libevent_core library includes event loops, timers, buffer code,
+ and various small compatibility functions.
+ .
+ If you're writing software that only uses libevent's event loop, you
+ should link against only the libevent_core library.
+
+Package: opt-libudev1
+Architecture: arm64
+Version: 1.6.3
+Priority: optional
+Section: libs
+Maintainer: Repository
+Installed-Size: 207
+Depends: opt-libc6 (>= 2.24)
+Filename: ./opt-libudev1_1.6.3_arm64.deb
+Size: 68428
+MD5sum: 772e2843150adaf26537c465e4ff9acc
+SHA1: 99b247a909a8458635e2e066d053794383f9c091
+SHA256: 4edad306de6feeb2854a2d4615f7d9e010814de4b9e9ed7860d944a887df4aaf
+SHA512: 40b1eef6d17ea7a9bf3e6b70d42369f0a570323136fa5a2e57ea14e97e9555e5c95390eb3f89d9cd254511a855233141a43a772a81a19c1cf52ddfbdbdfb8e57
+Homepage: https://www.freedesktop.org/wiki/Software/systemd
+Description: libudev shared library
+ This library provides APIs to introspect and enumerate devices on the local
+ system.
+
+Package: opt-libgcc1
+Architecture: arm64
+Version: 12.2.0-1
+Priority: required
+Section: libs
+Source: gcc-12.2.0
+Maintainer: Repository
+Installed-Size: 440
+Depends: opt-libc6 (>= 2.24)
+Filename: ./opt-libgcc1_12.2.0-1_arm64.deb
+Size: 169168
+MD5sum: ea7121b96bbd1bbc810c1d8b797afbb3
+SHA1: 4ceee7332d201106a8fdf0ef8460f6d947179ad7
+SHA256: fc41d76dbc437c15b8706a39ae4cf291ebd4f0497f078de29874ed26f8c34bae
+SHA512: 3e45557a43b2306530ba0e6d30241be5df206426d64493d48325db1246a903f7b2ac4cb59c276e1525c02e742c25d108ff14bea75b74c4568d852319f0b2c8c2
+Homepage: http://gcc.gnu.org/
+Description: GCC support library
+ Shared version of the support library, a library of internal subroutines
+ that GCC uses to overcome shortcomings of particular machines, or
+ special needs for some languages.
+
+Package: opt-wireguard-ui
+Architecture: arm64
+Version: 0.4.0
+Priority: optional
+Section: net
+Maintainer: Repository
+Installed-Size: 16818
+Depends: opt-libc6 (>= 2.24), opt-wireguard-tools
+Filename: ./opt-wireguard-ui_0.4.0_arm64.deb
+Size: 6092646
+MD5sum: 39621d10b0a23ab8138098952840a076
+SHA1: 63954b9fdef0f046a62a1609981bb71d35072a33
+SHA256: c589cbfe59357160fcf2035aaf5c8274298ac0e52d4121e426e6e05947cb98d5
+SHA512: 03faf0bbcaccf7fad2451d28e77353cd0ac55a8c87fb0ac107f9cf3aae70aaf104d4fe15465e68502ea1c54f18ac259b94a826bab4ea7bb596353a6bf411299a
+Homepage: https://github.com/ngoduykhanh/wireguard-ui
+Description: A web user interface to manage your WireGuard setup.
+ WireGuard-UI is a friendly UI with Authentication, manage extra
+ client information (name, email, etc), retrieve client config
+ using QR code / file / email
+
+Package: opt-nfs-utils
+Architecture: arm64
+Version: 2.6.2
+Priority: standard
+Section: net
+Maintainer: Repository
+Installed-Size: 1982
+Depends: opt-keyutils (>= 1.6.1), opt-libc6 (>= 2.24), opt-libcap2 (>= 2.67), opt-libdevmapper (>= 1.02), opt-libevent-core (>= 2.1.12), opt-libsqlite3 (>= 3.41), opt-libtirpc3 (>= 1.3.3), opt-util-linux (>= 2.38.1), opt-zlib1g (>= 1.2.13)
+Filename: ./opt-nfs-utils_2.6.2_arm64.deb
+Size: 574292
+MD5sum: 4e2fc6f1411942934efc5dc37eface45
+SHA1: 3e99479eda30a5bb6ed08e70609642ba48fdbe86
+SHA256: 19c7860b245b2529205aed2bf3d33f1424668c70e13c868143ebdf693dcd54f7
+SHA512: 56d2ccf4dafd5c20864f89ad413d731c28dd126e0ffdaddbf1c943cb37c95db0feed57c00f86a0ec6bf446577ff54b77ea726eacb9e7b534cdb8a08b76da3cf0
+Homepage: http://nfs.sourceforge.net
+Description: NFS support files common to client and server and support for NFS kernel server
+ Use this package on any machine that uses NFS, either as client or
+ server.  Programs included: lockd, statd, showmount, nfsstat, gssd,
+ idmapd and mount.nfs.
+ .
+ The NFS kernel server is currently the recommended NFS server for use
+ with Linux, featuring features such as NFSv3 and NFSv4, Kerberos
+ support via GSS, and much more. It is also significantly faster and
+ usually more reliable than the user-space NFS servers (from the
+ unfs3 and nfs-user-server packages). However, it is more difficult to
+ debug than the user-space servers, and has a slightly different
+ feature set.
+ .
+ This package contains the user-space support needed to use the
+ NFS kernel server. Most administrators wishing to set up an NFS server
+ would want to install this package.
+
+Package: opt-libdevmapper
+Architecture: arm64
+Version: 1.02
+Priority: optional
+Section: libs
+Maintainer: Repository
+Installed-Size: 408
+Depends: opt-libc6 (>= 2.24), opt-libudev1 (>= 1.6.3)
+Filename: ./opt-libdevmapper_1.02_arm64.deb
+Size: 156314
+MD5sum: d87b3177ec873a26f679526e39a5a53b
+SHA1: b5218a5ac90b627d261aded61daee2eb64bc85ea
+SHA256: be08e462f2d3e791184369fcb5580b26554b5db985c6de4f4c5d52ec3167be22
+SHA512: b148997ddaf73ffcb4ee8b8177f2f140c615809263da4ff864e945edd90a4499cd048864903cb7d8d846a3dfe8357d29a4b9410e6c2162e988132b2c40508cda
+Homepage: https://sourceware.org/lvm2/
+Description: Linux Kernel Device Mapper userspace library
+ The Linux Kernel Device Mapper is the LVM (Linux Logical Volume Management)
+ Team's implementation of a minimalistic kernel-space driver that handles
+ volume management, while keeping knowledge of the underlying device layout
+ in user-space.  This makes it useful for not only LVM, but software raid,
+ and other drivers that create "virtual" block devices.
+ .
+ This package contains the (user-space) shared library for accessing the
+ device-mapper; it allows usage of the device-mapper through a clean,
+ consistent interface (as opposed to through kernel ioctls).
+
+Package: ui-ware
+Architecture: all
+Version: 1.0.0
+Priority: optional
+Section: contrib/utils
+Maintainer: Repository
+Installed-Size: 30
+Filename: ./ui-ware_1.0.0_all.deb
+Size: 5088
+MD5sum: 0f4b6f93bd04bed91e54352e72f2ac85
+SHA1: 9326087aa1ca15731c820ea84da53c115d963c1f
+SHA256: 5c245806b877cd01f382ef519ac37a3b339438bef79bab0ca60194fe3b9ba054
+SHA512: 01b7df7c1c4b09d289977d97ed1e371dbed73f26a33852588491b092e8aaaa4bd9f03d47589c3e183f79e65503f24657cb4a6c66e0fe76ba56f61ff6a2107b77
+Homepage: https://ui-ware.mcpat.com
+Description: UI-Ware
+ Mount persistent to opt on boot and links to repository for
+ all packages from UI-Ware
+
+Package: opt-wireguard-tools
+Architecture: arm64
+Version: 1.0.20210914
+Priority: optional
+Section: net
+Maintainer: Repository
+Installed-Size: 161
+Depends: opt-libc6 (>= 2.24)
+Conflicts: wireguard-tools
+Filename: ./opt-wireguard-tools_1.0.20210914_arm64.deb
+Size: 57080
+MD5sum: f737c1975acceacb50c670021f29027d
+SHA1: c2ecf2415fa87c8cd1ca2eb633576148e51930b0
+SHA256: 8e814f7e69f59a830155e51beb81a18f1f68990415ba720162475d3ed37d20cc
+SHA512: f0299186eaca6a4b83628fc021bd5d10151719ab1bf0b59f9fc0376dad5209f8ff20a44c7eb198e6662e049baf81b32cd6e23c172a558bd0d7378c430add931d
+Homepage: https://www.wireguard.com
+Description: fast, modern, secure kernel VPN tunnel (userland utilities)
+ WireGuard is a novel VPN that runs inside the Linux Kernel and uses
+ state-of-the-art cryptography (the "Noise" protocol). It aims to be
+ faster, simpler, leaner, and more useful than IPSec, while avoiding
+ the massive headache. It intends to be considerably more performant
+ than OpenVPN. WireGuard is designed as a general purpose VPN for
+ running on embedded interfaces and super computers alike, fit for
+ many different circumstances. It runs over UDP.
+ .
+ This package contains command-line tools to interact with the
+ WireGuard kernel module.  Currently, it provides only a single tool:
+ .
+ wg: set and retrieve configuration of WireGuard interfaces
+
+Package: opt-libmagic1
+Architecture: arm64
+Version: 5.41
+Priority: optional
+Section: libs
+Maintainer: Repository
+Installed-Size: 7293
+Depends: opt-libbz2 (>= 1.0.8), opt-libc6 (>= 2.24), opt-liblzma5 (>= 5.4.1), opt-zlib1g (>= 1.2.13)
+Filename: ./opt-libmagic1_5.41_arm64.deb
+Size: 414862
+MD5sum: b84c63d2d46cbe093b738da9970a2bd9
+SHA1: 1d0f0aeb96850067a03dd1261f06344165c7e0e5
+SHA256: 5361495b6c2233d343eae463fdd19cd04ad463215e43bc0d1a7d752fab239c77
+SHA512: 54e80477e5b2ba67b415851b9af37ef7d74e671fb801d9478fb0bf7deecdc76ff2b24c5b9aa1fd1afab52f3b467b811386b9e8e06448b017d7a8b7ab09e37e99
+Homepage: https://www.darwinsys.com/file/
+Description: Recognize the type of data in a file using "magic" numbers - library
+ This library can be used to classify files according to magic number
+ tests. It implements the core functionality of the file command.
+
